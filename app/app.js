@@ -21,7 +21,7 @@
 	      configData.adminContext = configData.backendBaseContext + apiBase;
             app.constant('config', configData);
 	    }, function(errorResponse) {
-	      var defaultBackend = 'http://localhost:8080/smart-backend';
+	      var defaultBackend = 'http://localhost:8080/backend';
             app.constant('config', {
 	        'backendBaseContext': defaultBackend,
 	        'adminContext': defaultBackend + apiBase

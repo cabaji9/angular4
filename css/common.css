@@ -175,14 +175,7 @@ a{
     -moz-animation-timing-function: ease-in-out;    
 }
 
-#movix-main-header .navbar-brand{
-	max-width: 250px;
-	max-height: 87px;
-	width : auto;	 
-	height: auto;
-	position: absolute;
-	
-}
+
 
 .like-logo {
 	max-width: 220px !important;
@@ -273,10 +266,7 @@ iframe{
 /**********************************************/
 
 
-#smart-game-container{
-	width: 100%;
-	height: 100%;
-}
+
 
 #not-found-container{
 	width: 100%;

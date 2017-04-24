@@ -32,7 +32,7 @@ Instala todos las librerias js que se necesitan.
 Para la ejecución se debe correr el siguiente comando:
 
 ```
-$ npm run local --watch
+$ npm run local 
 
 ```
 
@@ -56,4 +56,11 @@ Para levantarlo en https, genera el primero un certificado con openssl.
 
 Y el segundo lo levanta con https.
 
+
+
+Para poder generar los cambios en caliente del less
+
+```
+$ npm run local -- --watch
+```
 

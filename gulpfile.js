@@ -10,6 +10,8 @@ var uglify = require('gulp-uglify');
 var less = require('gulp-less');
 var cleanCSS = require('gulp-clean-css');
 var util = require('gulp-util');
+var ngAnnotate = require('gulp-ng-annotate');
+
 
 const DESTINY = './';
 const APP_PATH = `${DESTINY}app/`;
@@ -72,8 +74,9 @@ gulp.task('scripts', function () {
     gulp.src([APP_PATH + '**/*.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('app.all.js'))
+        .pipe(ngAnnotate())
         .pipe(uglify({
-            mangle: false
+            mangle: true
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(`${DESTINY}js/`))
