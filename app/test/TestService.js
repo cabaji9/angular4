@@ -1,6 +1,6 @@
 
     angular.module('app').service("AppService",
-        ['$http', '$sce', 'config', 'responseService','$location', function ($http, $sce, configService, ResponseService ,$location) {
+        ['$http', 'config', 'responseService', function ($http, configService, ResponseService ) {
             var context = configService.backendUrl;
 
             this.getData = function () {
@@ -12,4 +12,15 @@
                     }, ResponseService.error);
             }
         }]);
+
+
+
+    angular.module('app').service("SimpleService",
+         function ( ) {
+
+
+           this.respond = function(){
+             return "Yes!"
+           };
+        });
 

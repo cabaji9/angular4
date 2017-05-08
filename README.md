@@ -64,3 +64,12 @@ Para poder generar los cambios en caliente del less
 $ npm run local -- --watch
 ```
 
+
+
+PRUEBAS UNITARIAS
+
+Para realizar pruebas se debe correr 
+
+```
+karma start.
+```

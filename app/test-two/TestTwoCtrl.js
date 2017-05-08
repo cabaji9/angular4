@@ -1,7 +1,6 @@
 var app = angular.module('app');
-app.controller('TestTwoCtrl', ['$rootScope', '$scope', '$filter',
-  '$routeParams', TestTwoCtrl]);
-function TestTwoCtrl($rootScope, $scope, $filter, $routeParams) {
+app.controller('TestTwoCtrl', ['$scope', TestTwoCtrl]);
+function TestTwoCtrl( $scope ) {
   $scope.value = 'TEST TWO!';
 };
 
