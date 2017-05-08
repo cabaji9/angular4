@@ -13,7 +13,7 @@ describe('AppService', function () {
     beforeEach(function () {
 
         mockDependency = {
-            backendUrl:"adsfa"
+            backendUrl:"test"
         };
 
         module(function ($provide) {
@@ -29,7 +29,6 @@ describe('AppService', function () {
         module(function ($provide) {
             $provide.value('ResponseService', mockedError);
         });
-
     });
 
 
@@ -42,6 +41,34 @@ describe('AppService', function () {
     it('should exist', function () {
         expect(AppService).toBeDefined();
     });
+
+    var httpLocalBackend;
+    beforeEach(inject(function ($httpBackend) {
+        httpLocalBackend = $httpBackend;
+    }));
+
+
+
+    it('test data',function(){
+
+        var testData = function(stuffId) {
+            expect(stuffId.stuffId).toBe(1);
+
+        };
+
+        var failTest = function(error) {
+            expect(error).toBeUndefined();
+        };
+
+        var httpResponse = { "stuffId": 1 };
+
+        httpLocalBackend.expectGET("test/data").respond(200, httpResponse);
+        AppService.getData()
+            .then(testData)
+            .catch(failTest);
+
+        httpLocalBackend.flush();
+    })
 });
 
 describe('SimpleService', function () {
