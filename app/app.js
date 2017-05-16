@@ -5,7 +5,9 @@
 	                                   'ngRoute',
 	                                   'ui.bootstrap',
 	                                   'ngSanitize',
-	                                   'ngAnalytics'
+	                                   'ngAnalytics',
+        								'xeditable'
+
 	                                   ]);
 
 	fetchConfiguration().then(bootstrapApplication);

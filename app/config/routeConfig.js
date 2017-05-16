@@ -17,10 +17,10 @@
         .config(function ($routeProvider) {
             $routeProvider
                 .when('/hello', {
-                    templateUrl: 'app/test/test.html',
+                    templateUrl: 'app/view/test/test.html',
                 })
                 .when('/hello_two', {
-                    templateUrl: 'app/test-two/test.html',
+                    templateUrl: 'app/view/test/test.html',
                 })
                 .otherwise({
                     redirectTo: '/hello'

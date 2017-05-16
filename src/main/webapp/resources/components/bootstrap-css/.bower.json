@@ -1,0 +1,39 @@
+{
+  "name": "bootstrap-css",
+  "version": "3.3.5",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "bootstrap",
+    "twitter-bootstrap",
+    "bootstrap.js"
+  ],
+  "main": [
+    "css/bootstrap.min.css",
+    "js/bootstrap.min.js"
+  ],
+  "homepage": "http://getbootstrap.com/",
+  "author": {
+    "name": "Twitter Inc."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jozefizso/bower-bootstrap-css.git"
+  },
+  "license": "MIT",
+  "_release": "3.3.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.3.5",
+    "commit": "a703483ec5d903929f3839af572a1a608410c554"
+  },
+  "_source": "https://github.com/jozefizso/bower-bootstrap-css.git",
+  "_target": "3.3.5",
+  "_originalSource": "bootstrap-css"
+}

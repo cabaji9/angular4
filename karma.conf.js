@@ -23,7 +23,7 @@ module.exports = function (config) {
             './node_modules/angular-mocks/angular-mocks.js',
             './components/ngAnalytics/src/ng-analytics.js',
             'app/**/*.js',
-            'app/test/TestService.js',
+            'app/services/TestService.js',
             './test/TestCtrl.spec.js',
 
             {pattern: 'config/localhost/config.json', watched: false, included: false, served: true, nocache: false}

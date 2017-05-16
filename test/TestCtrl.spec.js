@@ -83,7 +83,13 @@ describe('SimpleService', function () {
     it('should exist', function () {
         expect(SimpleService).toBeDefined();
     });
+
+    it('test function',function(){
+       expect(SimpleService.respond()).toBe("Yes!");
+    });
 });
+
+
 
 
 describe('TestTwoCtrl', function () {
