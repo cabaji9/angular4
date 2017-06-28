@@ -52,18 +52,44 @@ describe('AppService', function () {
     it('test data',function(){
 
         var testData = function(stuffId) {
-            expect(stuffId.stuffId).toBe(1);
-
-        };
+            if(stuffId){
+                expect(stuffId.stuffId).toBe(1);
+            }
+         };
 
         var failTest = function(error) {
+            console.log(error);
             expect(error).toBeUndefined();
         };
 
         var httpResponse = { "stuffId": 1 };
 
-        httpLocalBackend.expectGET("test/data").respond(200, httpResponse);
+        httpLocalBackend.expectGET("test/test").respond(200, httpResponse);
         AppService.getData()
+            .then(testData)
+            .catch(failTest);
+
+        httpLocalBackend.flush();
+    })
+
+
+    it('remove data',function(){
+
+        var testData = function(stuffId) {
+            if(stuffId){
+                expect(stuffId.stuffId).toBe(1);
+            }
+        };
+
+        var failTest = function(error) {
+            console.log(error);
+            expect(error).toBeUndefined();
+        };
+
+        var httpResponse = { "stuffId": 1 };
+
+        httpLocalBackend.expectDELETE("test/delete/1").respond(500, httpResponse);
+        AppService.removeData(1)
             .then(testData)
             .catch(failTest);
 

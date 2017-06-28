@@ -7,6 +7,7 @@
                 var url = context+"/test";
                 return $http.get(url).then(
                     function (response) {
+                        console.log(response);
                         var responseVar = response.data;
                         return responseVar;
                     }, ResponseService.error);

@@ -22,6 +22,7 @@ module.exports = function (config) {
             './components/angular-sanitize/angular-sanitize.js',
             './node_modules/angular-mocks/angular-mocks.js',
             './components/ngAnalytics/src/ng-analytics.js',
+            './components/angular-xeditable/dist/js/xeditable.js',
             'app/**/*.js',
             'app/services/TestService.js',
             './test/TestCtrl.spec.js',
