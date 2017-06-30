@@ -1,4 +1,5 @@
 
+
 #REQUISITES
 
 Previously its needed to have installed on the machine running angular cli
@@ -11,6 +12,16 @@ npm install -g @angular/cli
 
 
 #CONFIGURATION
+
+This projects is using angular 4.0.0 
+Angular material 2
+Angular Flex .-> for layout and responsiveness
+
+More info on:
+
+https://github.com/angular/flex-layout/wiki/Responsive-API
+
+
 
 Run :
 
