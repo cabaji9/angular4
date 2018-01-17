@@ -7,8 +7,9 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --port 4202",
+    "build": "ng build --environment=prod",
+    "buildqa": "ng build --environment=qa",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
